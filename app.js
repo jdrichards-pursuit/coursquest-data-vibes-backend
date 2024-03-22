@@ -3,12 +3,17 @@ const cors = require("cors");
 
 const app = express();
 
+const courseController = require("./controllers/courseController");
+
 app.use(cors());
 app.use(express.json());
 
+
+app.use("/api/courses", courseController);
+
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to Bookmarks App");
+  res.send("Welcome to CoursQuest App");
 });
 
 // 404 PAGE
