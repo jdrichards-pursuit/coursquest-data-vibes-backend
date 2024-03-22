@@ -9,6 +9,8 @@ const {
   updateReviewById,
 } = require("../queries/reviews");
 
+const { validateReviewRating } = require("../validations/checkReview");
+
 reviews.get("/", async (req, res) => {
   try {
     const allReviews = await getAllReviews();
@@ -34,6 +36,7 @@ reviews.get("/:id", async (req, res) => {
 
 reviews.post(
   "/",
+  validateReviewRating,
 
   async (req, res) => {
     try {
@@ -45,7 +48,7 @@ reviews.post(
   }
 );
 
-reviews.put("/:id", async (req, res) => {
+reviews.put("/:id", validateReviewRating, async (req, res) => {
   const { id } = req.params;
   try {
     const updatedReview = await updateReviewById(id, req.body);
