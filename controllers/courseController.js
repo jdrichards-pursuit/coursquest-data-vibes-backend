@@ -16,6 +16,8 @@ const {
   validateCourseCost
 } = require("../validations/checkCourse");
 
+const {getAllReviews} = require("../queries/reviews")
+
 courses.get("/", async (req, res) => {
   try {
     const allCourses = await getAllCourses();
@@ -29,8 +31,10 @@ courses.get("/:id", async (req, res) => {
   const { id } = req.params;
   try {
     const course = await getCourseById(id);
+    const reviews = await getAllReviews(id);
+    const filterdReviews = reviews.filter((review)=> course.id === review.course_id)
     if (course) {
-      res.status(200).json(course);
+      res.status(200).json({...course, filterdReviews});
     } else {
       res.status(404).json({ error: 'Course not found with this ID' });
     }
