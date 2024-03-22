@@ -4,12 +4,13 @@ const cors = require("cors");
 const app = express();
 
 const courseController = require("./controllers/courseController");
+const reviewController = require("./controllers/reviewsController");
 
 app.use(cors());
 app.use(express.json());
 
-
 app.use("/api/courses", courseController);
+app.use("/api/reviews", reviewController);
 
 // ROUTES
 app.get("/", (req, res) => {
