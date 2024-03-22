@@ -24,7 +24,7 @@ const validateCourseName = (req, res, next) => {
   
   const validateCourseCost = (req, res, next) => {
     const { cost } = req.body;
-    if (!cost || isNaN(cost) || parseFloat(cost) <= 0) {
+    if ( isNaN(+cost) || parseFloat(+cost) < 0) {
       return res.status(400).json({ error: 'Course cost must be a positive number' });
     }
     next();

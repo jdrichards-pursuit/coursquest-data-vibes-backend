@@ -2,7 +2,8 @@ DROP DATABASE IF EXISTS coursquest_db; -- change name of db
 CREATE DATABASE coursquest_db; -- change name of db
 
 \c coursquest_db;
- -- change name of db
+
+-- change name of db
 
 -- Create your tables here
 
