@@ -44,11 +44,11 @@ const deleteCourseById = async (id) => {
 };
 
 const updateCourseById = async (id, course) => {
-  const { name, subject, description, professor, image_url, start_date, end_date, difficulty, cost } = course;
+  const { user_id,name, subject, description, professor, image_url, start_date, end_date, difficulty, cost } = course;
   try {
     const updatedCourse = await db.one(
-      'UPDATE courses SET name=$1, subject=$2, description=$3, professor=$4, image_url=$5, start_date=$6, end_date=$7, difficulty=$8, cost=$9 WHERE id=$10 RETURNING *',
-      [name, subject, description, professor, image_url, start_date, end_date, difficulty, cost, id]
+      'UPDATE courses SET user_id =$1, name=$2, subject=$3, description=$4, professor=$5, image_url=$6, start_date=$7, end_date=$8, difficulty=$9, cost=$10 WHERE id=$11 RETURNING *',
+      [user_id,name, subject, description, professor, image_url, start_date, end_date, difficulty, cost, id]
     );
     return updatedCourse;
   } catch (error) {
