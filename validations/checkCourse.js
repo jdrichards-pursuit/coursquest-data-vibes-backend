@@ -20,12 +20,10 @@ const validateCourseDifficulty = (req, res, next) => {
     !difficulty ||
     ["Beginner", "Intermediate", "Advanced"].indexOf(difficulty) === -1
   ) {
-    return res
-      .status(400)
-      .json({
-        error:
-          "Course difficulty must be one of: Beginner, Intermediate, Advanced",
-      });
+    return res.status(400).json({
+      error:
+        "Course difficulty must be one of: Beginner, Intermediate, Advanced",
+    });
   }
   next();
 };
