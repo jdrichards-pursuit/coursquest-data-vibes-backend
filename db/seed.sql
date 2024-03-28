@@ -7,7 +7,9 @@
 INSERT INTO users (name, email, is_faculty)
 VALUES 
 ('John Doe', 'john@example.com', false),
-('Jane Smith', 'jane@example.com', true);
+('Jane Smith', 'jane@example.com', true),
+('Alice Johnson', 'alice@example.com', false),
+('Bob Smith', 'bob@example.com', false);
 
 -- Inserting course data
 INSERT INTO courses (user_id, name, subject, description, professor, image_url, start_date, end_date, difficulty, cost)
@@ -19,7 +21,14 @@ VALUES
 (NULL, 'Digital Marketing Essentials', 'Marketing', 'Explore the dynamic world of digital marketing with Dr. White in this comprehensive course. From search engine optimization (SEO) and content marketing to social media advertising, you`ll learn the essential strategies and tactics needed to succeed in today`s digital landscape. Through case studies and practical exercises, you`ll gain hands-on experience in developing and executing effective digital marketing campaigns that drive results. Whether you`re a marketing professional seeking to enhance your skills or an entrepreneur looking to promote your business online, this course provides invaluable insights into the principles and practices of digital marketing.', 'Dr. White', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711418541/CourseQuest%20-%20App/marketing-strateg-pic-jpg_pgzkzi.jpg', '2024-05-01', '2024-07-01', 'Beginner', 19.99),
 (1, 'Introduction to Drawing', 'Art', 'Unleash your creativity and master the art of drawing with Prof. Davis as your guide. This introductory course covers the fundamental techniques and principles of drawing, from understanding line and shape to capturing light and shadow. Through a series of guided exercises and projects, you`ll develop your observational skills and learn how to render objects and scenes with accuracy and expression. Whether you`re a complete beginner or an experienced artist looking to refine your skills, this course offers a supportive environment to explore your artistic potential and unlock the joys of drawing.', 'Prof. Davis', 'https://res.cloudinary.com/dvmczcg3f/image/upload/t_crop/v1711418337/CourseQuest%20-%20App/drawing-of-hands-jpg_kgiyip.jpg', '2024-06-01', '2024-08-01', 'Beginner', 0.00),
 (1, 'Art History', 'Art', 'Journey through the rich tapestry of art history with Dr. Rodriguez as your expert companion. This in-depth course traces the evolution of art from ancient civilizations to the modern era, exploring major movements, styles, and artists along the way. From the Renaissance masters to the avant-garde pioneers, you`ll gain a deeper understanding of the cultural, political, and social contexts that have shaped the course of art history. Through lectures, discussions, and visual analyses, you`ll cultivate a critical eye and develop a comprehensive appreciation for the diverse expressions of human creativity throughout the ages.', 'Dr. Rodriguez', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711418248/CourseQuest%20-%20App/weaving-cloth-pic-jpg_zauofc.jpg', '2024-07-01', '2024-09-01', 'Intermediate', 39.99),
-(1, 'Photography Basics', 'Art', 'Capture the beauty of the world around you with Prof. Martinez in this engaging course on photography basics. From mastering camera settings and composition to understanding light and exposure, you`ll learn the essential skills needed to take stunning photographs in any setting. Through hands-on exercises and feedback sessions, you`ll develop your artistic vision and technical proficiency, allowing you to express yourself creatively through the medium of photography. Whether you`re an aspiring photographer or a hobbyist looking to improve your skills, this course provides a solid foundation for unleashing your photographic potential and capturing memorable moments with confidence.', 'Prof. Martinez', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711416707/CourseQuest%20-%20App/photo-of-films-jpeg_dmk0xf.jpg', '2024-08-01', '2024-10-01', 'Beginner', 29.99);
+(1, 'Photography Basics', 'Art', 'Capture the beauty of the world around you with Prof. Martinez in this engaging course on photography basics. From mastering camera settings and composition to understanding light and exposure, you`ll learn the essential skills needed to take stunning photographs in any setting. Through hands-on exercises and feedback sessions, you`ll develop your artistic vision and technical proficiency, allowing you to express yourself creatively through the medium of photography. Whether you`re an aspiring photographer or a hobbyist looking to improve your skills, this course provides a solid foundation for unleashing your photographic potential and capturing memorable moments with confidence.', 'Prof. Martinez', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711416707/CourseQuest%20-%20App/photo-of-films-jpeg_dmk0xf.jpg', '2024-08-01', '2024-10-01', 'Beginner', 29.99),
+(NULL, 'Introduction to Psychology', 'Psychology', 'Explore the fascinating field of psychology with this introductory course. Taught by Dr. Thompson, you will delve into the principles of human behavior, cognition, and emotion. Discover key topics such as memory, perception, and personality, and learn how psychological theories apply to everyday life. Whether you`re interested in understanding yourself better or pursuing a career in psychology, this course provides a solid foundation for further study.', 'Dr. Thompson', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711649390/psychology_typewriter_zaygo4.jpg', '2024-09-01', '2024-11-01', 'Beginner', 29.99),
+(NULL, 'World History: Ancient to Modern', 'History', 'Embark on a journey through time and explore the rich tapestry of world history. Led by Dr. Johnson, you will delve into the rise and fall of ancient civilizations, the development of major religions, and the emergence of global powers. Through engaging lectures and multimedia presentations, you will gain insights into pivotal historical events and their lasting impacts on society. Whether you`re a history enthusiast or a curious learner, this course offers a captivating exploration of our shared past.', 'Dr. Johnson', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711650597/temple_carvings_nr1xhe.jpg', '2024-10-01', '2024-12-01', 'Intermediate', 39.99),
+(NULL, 'Introduction to Biology', 'Biology', 'Dive into the fascinating world of biology and uncover the mysteries of life. Taught by Prof. Martinez, you will explore fundamental concepts such as cell biology, genetics, and evolution. Gain hands-on experience through laboratory exercises and fieldwork, and discover the interconnectedness of living organisms and their environments. Whether you`re considering a career in the life sciences or simply curious about the natural world, this course provides a comprehensive introduction to the science of biology.', 'Prof. Martinez', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711649108/colal-jpg_jzmskc.jpg', '2024-11-01', '2025-01-01', 'Beginner', 29.99),
+(NULL, 'Advanced Astrophysics', 'Physics', 'Delve deeper into the mysteries of the universe with this advanced astrophysics course. Led by renowned astrophysicist Prof. Rodriguez, you will explore cutting-edge research and theories in cosmology, black holes, and the nature of dark matter and dark energy. Through advanced mathematical models and computational simulations, you will analyze astronomical phenomena and expand your understanding of the cosmos. Whether you`re a professional physicist or an avid stargazer, this course offers an exhilarating journey through the wonders of space.', 'Prof. Rodriguez', 'https://res.cloudinary.com/dvmczcg3f/image/upload/a_-90/c_crop,w_2402,h_1351,x_0,y_242,ar_16:9/v1711650165/planet_wvdkq1.jpg', '2024-09-01', '2024-11-01', 'Advanced', 79.99),
+(NULL, 'Advanced Organic Chemistry', 'Chemistry', 'Take your understanding of organic chemistry to the next level with this advanced course. Taught by leading chemist Prof. Smith, you will explore advanced topics in organic synthesis and reaction mechanisms. Dive deep into stereochemistry, retrosynthetic analysis, and the application of spectroscopic techniques in organic chemistry. Through hands-on laboratory experiments and theoretical discussions, you will develop advanced problem-solving skills and master the art of chemical synthesis. Whether you`re pursuing a career in chemistry or conducting research in the field, this course provides a comprehensive exploration of organic chemistry principles.', 'Prof. Smith', 'https://res.cloudinary.com/dvmczcg3f/image/upload/a_-90/a_hflip/a_vflip/c_crop,w_3072,h_1728,x_0,y_96,ar_16:9/v1711649883/molecules_pgskr6.jpg', '2024-10-01', '2024-12-01', 'Advanced', 89.99),
+(NULL, 'Data Analysis with Python', 'Data Science', 'Take your data analysis skills to the next level with this intermediate course in Python. Led by Dr. Martinez, you will learn advanced data manipulation techniques, exploratory data analysis, and statistical modeling using Python libraries such as Pandas, NumPy, and Matplotlib. Dive deep into real-world datasets and gain practical experience in extracting insights and making data-driven decisions. Whether you`re a data scientist, analyst, or researcher, this course will enhance your proficiency in Python for data analysis.', 'Dr. Martinez', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711650725/chartd_qlhbgr.jpg', '2024-09-01', '2024-11-01', 'Intermediate', 69.99),
+(NULL, 'Introduction to Philosophy', 'Philosophy', 'Embark on a journey of philosophical inquiry with this introductory course. Taught by Prof. Davis, you will explore fundamental questions about existence, knowledge, ethics, and reality. Engage with classic philosophical texts and examine diverse perspectives on the nature of truth, justice, and the meaning of life. Whether you`re curious about philosophy or seeking to develop critical thinking skills, this course offers a thought-provoking exploration of timeless philosophical ideas.', 'Prof. Davis', 'https://res.cloudinary.com/dvmczcg3f/image/upload/c_crop,ar_16:9/v1711648896/rock_stack_bqrbhv.jpg', '2024-10-01', '2024-12-01', 'Beginner', 59.99);
 
 -- Inserting reviews data
 INSERT INTO reviews (user_id, course_id, rating, review)
@@ -31,4 +40,37 @@ VALUES
 (1, 5, 3, 'Informative content, but could use more practical examples.'),
 (1, 6, 4, 'Great course! Covers the basics of drawing thoroughly.'),
 (1, 7, 5, 'Fascinating exploration of art history.'),
-(1, 8, 4, 'Enjoyed learning photography basics with this course.');
+(1, 8, 4, 'Enjoyed learning photography basics with this course.'),
+(2, 1, 4, 'Solid introduction to programming concepts.'),
+(2, 2, 5, 'Fantastic course! Comprehensive coverage of data science fundamentals.'),
+(2, 3, 3, 'Decent overview of web development basics.'),
+(2, 4, 4, 'Well-explained machine learning basics.'),
+(2, 5, 4, 'Insightful digital marketing essentials.'),
+(2, 6, 4, 'Helped me get started with drawing.'),
+(2, 7, 5, 'Engaging exploration of art history.'),
+(2, 8, 3, 'Informative introduction to photography.'),
+(3, 1, 5, 'Excellent course! Clear explanations and practical exercises.'),
+(3, 2, 4, 'Very informative, but some topics could be more in-depth.'),
+(3, 3, 4, 'Solid foundation in web development principles.'),
+(3, 4, 5, 'Superb coverage of machine learning concepts.'),
+(3, 5, 4, 'Useful insights into digital marketing strategies.'),
+(3, 6, 3, 'Helped me improve my drawing skills.'),
+(3, 7, 5, 'Thorough exploration of art history.'),
+(3, 8, 4, 'Enjoyable and informative photography basics course.'),
+(3, 8, 3, 'Informative introduction to photography.'),
+(4, 8, 4, 'Enjoyable and informative photography basics course.'),
+(3, 9, 4, 'Insightful exploration of psychology fundamentals.'),
+(4, 9, 5, 'Dr. Thompson is an engaging instructor with real-world examples.'),
+(3, 10, 5, 'Engaging journey through world history. Dr. Johnson brings the past to life.'),
+(4, 10, 4, 'Thorough exploration of historical events and their impacts.'),
+(3, 11, 4, 'Comprehensive introduction to biology. Prof. Martinez makes complex topics easy to understand.'),
+(4, 11, 5, 'Enjoyed learning about genetics and evolution. Prof. Martinez provides clear explanations.'),
+(3, 12, 5, 'Fascinating journey through advanced astrophysics.'),
+(4, 12, 4, 'Prof. Rodriguez is an expert in the field, making complex concepts understandable.'),
+(3, 13, 4, 'Comprehensive exploration of advanced organic chemistry.'),
+(4, 13, 5, 'Prof. Smith provides in-depth explanations and practical applications.'),
+(3, 14, 5, 'Great course! Dr. Martinez covers advanced data analysis techniques thoroughly.'),
+(4, 14, 4, 'Enjoyed learning about data manipulation and statistical modeling in Python.'),
+(3, 15, 4, 'Thought-provoking introduction to philosophy.'),
+(4, 15, 5, 'Prof. Davis presents philosophical ideas in an engaging and accessible way.');
+
